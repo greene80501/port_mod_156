@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wyatt Greene - Resume & Journey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="static/styles.css">
+
+    <!-- Reminder: Link AOS CSS here if using Animate On Scroll -->
+    <!-- <link rel="stylesheet" href="path/to/aos.css" /> -->
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home" class="logo">Wyatt Greene</a>
+        <button class="navbar-toggle" id="mobile-menu" aria-label="Toggle Menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about_me" class="nav-link">About</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+             <!-- *** UPDATED NAVBAR ORDER TO MATCH SECTION ORDER *** -->
+            <li><a href="#work-experience" class="nav-link">Experience</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Timeline</a></li> <!-- Note: ID 'experience' is the Timeline -->
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="static\Wyatts_Resume.pdf" class="cta-button nav-resume-button" download="Wyatt_Greene_Resume.pdf">Resume</a></li>
+        </ul>
+         <a href="static\Wyatts_Resume.pdf" class="cta-button desktop-resume-button" download="Wyatt_Greene_Resume.pdf">Download Resume</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <!-- Subtle background element -->
+        <div class="hero-bg-texture"></div>
+        <h1>Wyatt Greene</h1>
+        <p><i class="fas fa-code icon-space"></i> Dreamer |
+           <i class="fas fa-cogs icon-space"></i> Learner |
+           <i class="fas fa-lightbulb icon-space"></i> Collaborator</p>
+        <a href="#about_me" class="hero-button">Learn More</a>
+        <div class="code-fall"></div> <!-- Assumes script.js handles this -->
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about_me" class="about_me section">
+        <div class="about-me-content section-container">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+
+            <p>
+                Hi, I'm <span class="highlight">Wyatt Greene</span> — a <span class="highlight">high school junior</span> and <strong>aspiring developer</strong> studying <span class="pink">Computer Information Systems</span> at <span class="pink">Front Range Community College</span>. I first got into tech through my <span class="highlight">love of hardware</span> and hands-on engineering, but it didn't take long before I was <span class="pink">hooked on coding</span>. One of my favorite memories is working on an <span class="highlight">ASL bot</span> with a friend. Our camera wasn't working, so we had to manually feed it data — in the middle of a dead-silent class. When it finally returned the right letter, we <span class="pink">jumped out of our chairs and yelled</span>. That moment sealed it for me: <strong>This is what I love to do</strong>.
+            </p>
+            <p>
+                I'm passionate about <span class="highlight">AI</span>, <span class="pink">quantum computing</span>, <span class="highlight">web development</span>, and <span class="pink">cybersecurity</span> — in that order. I work mostly in <strong>Python</strong>, but I also use HTML, CSS, JavaScript, C, and SQL. I've taught a class on <span class="highlight">data science with Python</span>, got into the <span class="pink">iSAT program</span>, and I'm constantly pushing myself to learn more. My dream is to develop the <strong>first AI that runs on a quantum computer</strong> — to build tech that <span class="highlight">impacts everyone</span> and leaves a <span class="pink">real mark on the world</span>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+         <div class="section-container">
+            <h2><i class="fas fa-graduation-cap"></i> My Education</h2>
+            <div class="education-container">
+                <!-- Education Item 1 - College -->
+                <div class="education-item card">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Associates of Applied Science - Computer Information Systems</h3>
+                        <p class="institution">Front Range Community College</p>
+                        <!-- ** UPDATED GRADUATION DATE FROM RESUME ** -->
+                        <p class="education-date">Expected Graduation: 2026 (GPA: 3.5)</p>
+                        <p class="education-details">Focusing on software development, database management, networking, web technologies, and system analysis.</p>
+                    </div>
+                </div>
+                <!-- Education Item 2 - High School -->
+                <div class="education-item card">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>High School Diploma (P-TECH Program)</h3>
+                        <!-- ** UPDATED HIGH SCHOOL NAME FROM RESUME ** -->
+                        <p class="institution">Skyline High School P-TECH</p>
+                        <!-- ** UPDATED GRADUATION DATE FROM RESUME ** -->
+                        <p class="education-date">Expected Graduation: 2026 (GPA: 3.08)</p>
+                        <!-- ** REVIEW/UPDATE HIGH SCHOOL DETAILS IF NEEDED ** -->
+                        <p class="education-details">Currently enrolled in P-Tech program, focusing on technology pathways alongside standard high school curriculum.</p>
+                    </div>
+                </div>
+                <!-- Education Item 3 - CU Pop Stem Camp (Optional, could also go in Projects/Activities) -->
+                <div class="education-item card">
+                     <div class="education-icon">
+                        <i class="fas fa-campground"></i> <!-- Or fas fa-flask for STEM -->
+                    </div>
+                    <div class="education-content">
+                        <h3>CU Pop Stem Camp</h3>
+                        <p class="institution">University of Colorado Boulder</p>
+                        <p class="education-date">July 8th 2024 - July 20th 2024</p>
+                        <p class="education-details">Intensive 2-week learning opportunity involving college-level classes daily. (GPA: 4.0)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- *** WORK EXPERIENCE SECTION (MOVED & POPULATED) *** -->
+    <section id="work-experience" class="work-experience section">
+        <div class="section-container">
+            <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+            <div class="experience-list">
+
+                <!-- JOB ITEM 1: AI Institute -->
+                <div class="job-item card">
+                    <div class="job-header">
+                        <h3>Intern</h3>
+                        <p class="job-dates">Jan 2024 - Present</p>
+                    </div>
+                    <p class="company-info"><span>AI Institute for Student-AI Teaming</span> | <span>Longmont, CO</span></p>
+                    <ul class="job-responsibilities">
+                        <li>Assisted in the design and development of AI systems for student-AI collaboration and learning.</li>
+                        <li>Contributed to the development and testing of AI tools to improve student engagement and productivity.</li>
+                    </ul>
+                    <!-- Optional Tags -->
+                    <!--
+                    <div class="job-tags">
+                         <span class="tag">AI</span>
+                         <span class="tag">Development</span>
+                         <span class="tag">Testing</span>
+                    </div>
+                    -->
+                </div>
+
+                <!-- JOB ITEM 2: AI Leadership Team -->
+                 <div class="job-item card">
+                    <div class="job-header">
+                        <h3>Member</h3>
+                         <p class="job-dates">Dec 2024 - Present</p>
+                    </div>
+                     <p class="company-info"><span>AI Leadership Team</span> | <span>Longmont, CO</span></p>
+                     <ul class="job-responsibilities">
+                        <li>Contributed to the design and implementation of multiple AI-driven projects with more to come.</li>
+                        <li>Authored over 1,000 lines of code, contributing to the functionality and innovation of cutting-edge solutions.</li>
+                    </ul>
+                     <!-- Optional Tags -->
+                     <!--
+                     <div class="job-tags">
+                         <span class="tag">AI</span>
+                         <span class="tag">Software Development</span>
+                         <span class="tag">Coding</span>
+                         <span class="tag">Innovation</span>
+                    </div>
+                    -->
+                </div>
+
+                 <!-- JOB ITEM 3: Chipotle -->
+                 <div class="job-item card">
+                    <div class="job-header">
+                        <h3>Crew Member</h3>
+                         <p class="job-dates">Aug 2024 - Present</p>
+                    </div>
+                     <p class="company-info"><span>Chipotle Mexican Grill</span> | <span>Longmont, CO</span></p>
+                     <ul class="job-responsibilities">
+                        <li>Recognized for outstanding customer service in a fast-paced and high-stress environment.</li>
+                        <li>Assisted in training three new hires, fostering a supportive team culture.</li>
+                    </ul>
+                     <!-- Optional Tags -->
+                     <!--
+                     <div class="job-tags">
+                         <span class="tag">Customer Service</span>
+                         <span class="tag">Teamwork</span>
+                         <span class="tag">Training</span>
+                         <span class="tag">Fast-Paced Environment</span>
+                    </div>
+                    -->
+                </div>
+
+            </div> <!-- End .experience-list -->
+        </div> <!-- End .section-container -->
+    </section>
+    <!-- *** END OF WORK EXPERIENCE SECTION *** -->
+
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section">
+        <div class="section-container">
+            <h2><i class="fas fa-certificate"></i> Certifications & Coursework</h2> <!-- Updated title slightly -->
+            <div class="certifications-container">
+
+                <!-- Application Specialist (from Resume) -->
+
+                <!-- AWS Cloud Practitioner (from Resume) -->
+                 <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\aws_certified.png" alt="AWS Certified Cloud Practitioner Logo" loading="lazy"> <!-- Example AWS logo URL -->
+                    </div>
+                    <div class="certification-content">
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <p class="certification-issuer">Issuer: <span>Amazon Web Services</span></p>
+                        <p class="certification-date">Pursuing</p>
+                         <!-- Add link if you have one for Credly/etc. once achieved -->
+                         <!-- <a href="#" class="certification-link" title="View AWS Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a> -->
+                    </div>
+                </div>
+
+
+
+                <!-- *** INDIVIDUAL IBM CERTIFICATIONS START HERE *** -->
+
+                <!-- Explorations into Mindfulness -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Explorations_into_Mindfulness.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Explorations into Mindfulness</h3>
+                        <p class="certification-issuer">Issuer: <span>IBM-SkillsBuild</span></p>
+                        <p class="certification-date">Issued: Dec 2022</p>
+                        <a href="https://www.credly.com/badges/561d2431-7d8d-4811-aca1-390b9bdace9c/public_url" class="certification-link" title="View Mindfulness Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Excel_Intermediate_Badge.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Excel Intermediate</h3> <!-- Shortened title -->
+                        <p class="certification-issuer">Issuer: <span>Cengage</span></p>
+                        <p class="certification-date">Issued: April 2024</p>
+                        <a href="https://achievement.cengage.com/2321f939-0c96-4823-b9ac-14a127dd00b2#acc.a304bDcl" class="certification-link" title="View AI Fundamentals Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- Artificial Intelligence Fundamentals -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Artificial_Intelligence_Fundamentals.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>AI Fundamentals</h3> <!-- Shortened title -->
+                        <p class="certification-issuer">Issuer: <span>IBM-SkillsBuild</span></p>
+                        <p class="certification-date">Issued: Aug 2024</p>
+                        <a href="https://www.credly.com/badges/5df57ee1-bc63-4883-a73a-9484c4a86088/public_url" class="certification-link" title="View AI Fundamentals Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Fundamentals -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Cybersecurity_Fundamentals.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Cybersecurity Fundamentals</h3>
+                        <p class="certification-issuer">Issuer: <span>IBM-SkillsBuild</span></p>
+                        <p class="certification-date">Issued: Aug 2024</p>
+                        <a href="https://www.credly.com/badges/0c186ae2-0cef-4294-b4e7-ebc601cf679f/public_url" class="certification-link" title="View Cybersecurity Fundamentals Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Web Development Fundamentals -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Web_Development_Fundamentals.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Web Dev Fundamentals</h3> <!-- Shortened title -->
+                        <p class="certification-issuer">Issuer: <span>IBM-SkillsBuild</span></p>
+                        <p class="certification-date">Issued: Aug 2024</p>
+                        <a href="https://www.credly.com/badges/9894d41d-131e-4bc1-840e-29d30e1a5385/public_url" class="certification-link" title="View Web Dev Fundamentals Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Explore Emerging Tech -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Explore_Emerging_Tech.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Explore Emerging Tech</h3>
+                        <p class="certification-issuer">Issuer: <span>IBM-SkillsBuild</span></p>
+                        <p class="certification-date">Issued: Aug 2024</p>
+                        <a href="https://www.credly.com/badges/efc90e4d-d29c-4d84-8dd0-b64b5242dcc3/public_url" class="certification-link" title="View Emerging Tech Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Data Fundamentals -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Data_Fundamentals.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Data Fundamentals</h3>
+                        <p class="certification-issuer">Issuer: <span>IBM-SkillsBuild</span></p>
+                        <p class="certification-date">Issued: Aug 2024</p>
+                        <a href="https://www.credly.com/badges/905bf925-dda0-4f23-9c29-3aea8e853b47/public_url" class="certification-link" title="View Data Fundamentals Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cloud Computing Fundamentals -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Cloud_Computing_Fundamentals.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Cloud Fundamentals</h3> <!-- Shortened title -->
+                        <p class="certification-issuer">Issuer: <span>IBM-SkillsBuild</span></p>
+                        <p class="certification-date">Issued: Aug 2024</p>
+                        <a href="https://www.credly.com/badges/037cdc0e-942d-44cc-b626-ee745ccc6736/public_url" class="certification-link" title="View Cloud Fundamentals Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- AI Foundations -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\AI_Foundations.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>AI Foundations</h3>
+                        <p class="certification-issuer">Issuer: <span>IBM-SkillsBuild</span></p>
+                        <p class="certification-date">Issued: Aug 2024</p>
+                        <a href="https://www.credly.com/badges/ea8d0fb7-1389-40ae-9e3b-0861ff31620b/public_url" class="certification-link" title="View AI Foundations Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Python for Data Science -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Python_for_Data_Science.png" alt="IBM Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Python for Data Science</h3>
+                        <p class="certification-issuer">Issuer: <span>IBM</span></p>
+                        <p class="certification-date">Issued: Jan 2025</p>
+                        <a href="https://www.credly.com/badges/94f99d0e-23b2-41ed-895b-518c101cb7f1/public_url" class="certification-link" title="View Python for Data Science Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Data Analysis Using Python -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Data_Analysis_Using_Python.png" alt="IBM Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Data Analysis Using Python</h3>
+                        <p class="certification-issuer">Issuer: <span>IBM</span></p>
+                        <p class="certification-date">Issued: Jan 2025</p>
+                        <a href="https://www.credly.com/badges/eb6a72e2-c726-4a2d-8d52-d9714b83f341/public_url" class="certification-link" title="View Data Analysis Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Build Your Own Chatbot - Level 1 -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Build_Your_Own_Chatbot_Level_1.png" alt="IBM Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Build Your Own Chatbot L1</h3> <!-- Shortened title -->
+                        <p class="certification-issuer">Issuer: <span>IBM</span></p>
+                        <p class="certification-date">Issued: Jan 2025</p>
+                        <a href="https://www.credly.com/badges/135c1c1b-a82e-4130-a6a5-6cfa917cb2e1/public_url" class="certification-link" title="View Chatbot L1 Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Open Source Origin Stories -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Open_Source_Origin_Stories.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Open Source Origin Stories</h3> <!-- Shortened title -->
+                        <p class="certification-issuer">Issuer: <span>IBM-SkillsBuild</span></p>
+                        <p class="certification-date">Issued: Jan 2025</p>
+                        <a href="https://www.credly.com/badges/1317855a-f156-46db-bb49-7157898f58b2/public_url" class="certification-link" title="View Open Source Stories Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Basic Principles of Design -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Basic_Principles_of_Design.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Basic Principles of Design</h3>
+                        <p class="certification-issuer">Issuer: <span>IBM-SkillsBuild</span></p>
+                        <p class="certification-date">Issued: Jan 2025</p>
+                        <a href="https://www.credly.com/badges/43cc22f0-bc8c-409d-a34e-d1a63967741c/public_url" class="certification-link" title="View Design Principles Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Job Application Essentials -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Job_Application_Essentials.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Job Application Essentials</h3>
+                        <p class="certification-issuer">Issuer: <span>IBM-SkillsBuild</span></p>
+                        <p class="certification-date">Issued: Feb 2025</p>
+                        <a href="https://www.credly.com/badges/a2869018-b656-4d29-bb81-cfc414a7eddf/public_url" class="certification-link" title="View Job Application Essentials Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Working in a Digital World: Professional Skills -->
+                <div class="certification-item card">
+                    <div class="certification-image">
+                        <img src="static\Imgs\Certs\Working_in_a_Digital_World-_Professional_Skills.png" alt="IBM SkillsBuild Logo" loading="lazy">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Professional Skills</h3> <!-- Shortened title -->
+                        <p class="certification-issuer">Issuer: <span>IBM-SkillsBuild</span></p>
+                        <p class="certification-date">Issued: Mar 2025</p>
+                        <a href="https://www.credly.com/badges/0c6ed6e0-8812-4d58-acb4-5f43652b651c/public_url" class="certification-link" title="View Professional Skills Certificate" target="_blank" rel="noopener noreferrer">View <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                 <!-- *** END OF INDIVIDUAL IBM CERTIFICATIONS *** -->
+
+            </div> <!-- End .certifications-container -->
+        </div> <!-- End .section-container -->
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="section-container">
+            <h2><i class="fas fa-laptop-code"></i> Technical & Soft Skills</h2> <!-- Adjusted Title -->
+            <div class="skills-grid">
+
+                <!-- Technical Skills: Languages Category -->
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML</span> <!-- Simplified from HTML5 -->
+                        <span class="skill-tag">CSS</span>  <!-- Simplified from CSS3 -->
+                        <span class="skill-tag">Some JavaScript</span> <!-- From Resume -->
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">SQL</span> <!-- Added SQL based on Education/Experience -->
+                        <!-- <span class="skill-tag">Py-Torch</span> --> <!-- Listed but maybe less primary? Decide if needed -->
+                    </div>
+                </div>
+
+                <!-- Technical Skills: Frameworks & Tools Category -->
+                <div class="skill-category">
+                     <!-- Combined Frameworks/Libraries/Tools -->
+                    <h3>Frameworks, Libraries & Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Tensorflow</span>
+                        <span class="skill-tag">Flask</span> <!-- Added based on potential experience -->
+                        <span class="skill-tag">CV2 (OpenCV)</span>
+                        <span class="skill-tag">MediaPipe</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Microsoft Office Suite</span>
+                        <span class="skill-tag">Web Hosting</span>
+                        <span class="skill-tag">Selenium/BS4</span> <!-- Assuming used for AssignMate -->
+                        <span class="skill-tag">Todoist API</span>
+                    </div>
+                </div>
+
+                 <!-- Technical Skills: Concepts & Areas Category -->
+                <div class="skill-category">
+                     <!-- Combined Concepts -->
+                    <h3>Concepts & Areas</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Intermediate AI Experience</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Quantum Computing (Basics)</span> <!-- Added from timeline -->
+                        <span class="skill-tag">Crypto Mining</span> <!-- From Resume -->
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Database Concepts</span>
+                        <span class="skill-tag">OOP</span>
+                         <span class="skill-tag">Agile (Basics)</span> <!-- Added from potential experience -->
+                    </div>
+                </div>
+
+                 <!-- Technical Skills: Hardware & OS Category -->
+                <div class="skill-category">
+                     <!-- Combined Hardware/OS -->
+                    <h3>Hardware & Operating Systems</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Computer Assembly & Repair</span>
+                        <span class="skill-tag">Computer Design</span> <!-- PCB/Logic Gates? -->
+                        <span class="skill-tag">Soldering</span>
+                        <span class="skill-tag">Tech Assembly & Repair</span>
+                        <span class="skill-tag">Ubuntu</span>
+                        <span class="skill-tag">Windows</span> <!-- Combined -->
+                        <span class="skill-tag">Linux (General)</span>
+                        <!-- Add specific Linux distros if desired -->
+                        <span class="skill-tag">Virtualization</span>
+                    </div>
+                </div>
+
+                 <!-- Soft Skills Category -->
+                 <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Customer Service</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">On Time</span>
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Problem-Solving</span> <!-- Added implicitly -->
+                        <span class="skill-tag">Collaboration</span> <!-- Added implicitly -->
+                        <span class="skill-tag">Adaptability</span> <!-- Added implicitly -->
+                    </div>
+                </div>
+
+            </div> <!-- End .skills-grid -->
+        </div> <!-- End .section-container -->
+    </section>
+
+
+    <!-- Timeline Section (Formerly Experience) -->
+    <section id="experience" class="experience section"> <!-- KEEPING ID as "experience" for now, matching nav link -->
+        <div class="section-container-wide">
+        <h2><i class="fas fa-route"></i> My Journey</h2>
+        <div class="timeline-wrapper">
+            <div class="timeline-line-container">
+                <div class="timeline-line"></div>
+                <div class="timeline-nodes-container">
+
+                    <!-- Timeline Item: Started Coding -->
+                    <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card" onclick="toggleExpand(this)">
+                            <h3>Coding Journey Begins</h3>
+                            <p class="date">~Mid 2019 (6th Grade)</p>
+                            <div class="more-info">
+                                <p>Started my coding adventure </p> <p>in 6th grade using Processing </p> <p>to grasp fundamental </p><p>programming concepts.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item: JS & Game Dev -->
+                    <div class="timeline-item item-bottom" data-aos="fade-up">
+                        <div class="timeline-icon"><i class="fas fa-gamepad"></i></div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card" onclick="toggleExpand(this)">
+                            <h3>Explored JS & </h3><h3>Game Dev</h3>
+                            <p class="date">~2020 (7th Grade)</p>
+                            <div class="more-info">
+                                <p>Expanded into JavaScript</p> <p>alongside Processing.</p> <p>Applied skills by developing </p> <p>simple games like Snake </p><p>and Tic Tac Toe.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- Timeline Item: Started Python -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-icon"><i class="fab fa-python"></i></div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card" onclick="toggleExpand(this)">
+                                <h3>First Python Steps</h3>
+                                <p class="date">~Fall 2020 (8th Grade)</p>
+                                <div class="more-info">
+                                    <p>Began learning Python</p> <p>in 8th grade, setting the</p> <p>stage for future work in AI,</p> web development,</p><p>and automation.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item: Started High School & P-Tech -->
+                        <div class="timeline-item item-bottom" data-aos="fade-up">
+                            <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card" onclick="toggleExpand(this)">
+                                <h3>Started High School</h3> <h3> & P-Tech</h3>
+                                <p class="date">Aug 2021 (Start of 9th Grade)</p>
+                                <div class="more-info">
+                                    <p>Entered high school and</p> <p>enrolled in the P-Tech program,</p> <p>gaining access to more</p> <p>structured computer science </p><p>learning and opportunities.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item: 9th Grade Tech Exploration -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-icon"><i class="fas fa-atom"></i></div> <!-- Changed icon -->
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card" onclick="toggleExpand(this)">
+                                <h3>Explored AI, Quantum  </h3><h3>& C</h3>
+                                <p class="date">~2021-2022 (9th Grade)</p>
+                                <div class="more-info">
+                                    <p>Dived into diverse areas:</p> <p>Explored AI concepts, ran first</p> <p>local LLM, self-taught C</p> <p>programming out of curiosity,</p> <p>and wrote/executed a first</p> <p>quantum algorithm on IBM's</p> <p>quantum platform.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item: Web Dev Start -->
+                        <div class="timeline-item item-bottom" data-aos="fade-up">
+                            <div class="timeline-icon"><i class="fas fa-globe"></i></div> <!-- Changed icon -->
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card" onclick="toggleExpand(this)">
+                                <h3>Started Web </h3><h3>Development</h3>
+                                <p class="date">~2021-2022 (9th Grade)</p>
+                                <div class="more-info">
+                                    <p>Began learning web </p> <p>development (HTML, CSS, JS) </p> <p>initially to build a portfolio, </p> <p>quickly developing a strong </p> <p>interest and continuing to </p><p>build skills.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item: Started FRCC -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-icon"><i class="fas fa-university"></i></div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card" onclick="toggleExpand(this)">
+                                <h3>Began College Courses</h3>
+                                <p class="date">Aug 2022 (Start of 10th Grade)</p>
+                                <div class="more-info">
+                                    <p>Enrolled concurrently at</p> <p>Front Range Community </p> <p>College, starting the A.A.S. </p> <p>in Computer Information </p> <p>Systems program while still </p> <p>in high school.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item: Web Dev Fundamentals Course -->
+                        <div class="timeline-item item-bottom" data-aos="fade-up">
+                            <div class="timeline-icon"><i class="fas fa-code"></i></div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card" onclick="toggleExpand(this)">
+                                <h3>Web Dev Coursework</h3>
+                                <p class="date">Nov 2022 (10th Grade)</p>
+                                <div class="more-info">
+                                    <p>Solidified core web </p> <p>technologies (HTML, CSS, </p><p>JavaScript) through</p> <p> dedicated coursework</p><p> at FRCC.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item: ASL AI Model -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-icon"><i class="fas fa-robot"></i></div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card" onclick="toggleExpand(this)">
+                                <h3>Built First AI Model (ASL)</h3>
+                                <p class="date">Spring 2023 (10th Grade)</p>
+                                <div class="more-info">
+                                    <p>Developed first end-to-end</p> <p>Machine Learning model for</p> <p>American Sign Language </p> <p>translation. Collaborated on </p> <p>the project, handling front-end </p> <p>UI and data processing</p> <p>/collection (CV2, MediaPipe).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item: AssignMate Project -->
+                        <div class="timeline-item item-bottom" data-aos="fade-up">
+                            <div class="timeline-icon"><i class="fas fa-tasks"></i></div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card" onclick="toggleExpand(this)">
+                                <h3>Created 'AssignMate'</h3>
+                                <p class="date">Summer 2023 (After 10th Grade)</p>
+                                <div class="more-info">
+                                    <p>Developed 'AssignMate', a</p> <p>Python script using web </p> <p>scraping (Selenium/BS4) and </p> <p>the Todoist API to </p> <p>automate tracking  </p><p>assignments from </p><p>Infinite Campus.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item: ML Paper -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-icon"><i class="fas fa-flask"></i></div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card" onclick="toggleExpand(this)">
+                                <h3>Machine Learning </h3><h3>Research</h3>
+                                <p class="date">Fall 2023 - Present (11th Grade)</p>
+                                <div class="more-info">
+                                    <p>Began ongoing research paper</p> <p>exploring activation functions</p> <p>in neural networks (image</p> <p>recognition, LSTM, etc.), using</p> <p>TensorFlow/Keras </p><p>for experiments.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item: Certifications -->
+                        <div class="timeline-item item-bottom" data-aos="fade-up">
+                            <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card" onclick="toggleExpand(this)">
+                                <h3>Focused Skill </h3><h3>Certification</h3>
+                                <p class="date">Aug 2024 - Mar 2025</p>
+                                <div class="more-info">
+                                    <p>Undertook intensive learning</p> <p>via IBM SkillsBuild, earning</p> <p>multiple certifications across AI,</p> <p>Cloud, Web Dev, Data Science,</p> <p>Cybersecurity, and Professional</p> <p>Skills.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Timeline Item: Today -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-icon"><i class="fas fa-star"></i></div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card" onclick="toggleExpand(this)">
+                                <h3>Continuing Journey</h3>
+                                <p class="date">Present</p>
+                                <div class="more-info">
+                                    <p>Actively developing skills,</p> <p>working on personal projects,</p> <p>pursuing dual HS/College</p> <p>education, and seeking</p> <p>opportunities to apply</p> <p>technology creatively and</p> <p>effectively.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="section-container">
+            <!-- ** UPDATED TITLE FROM RESUME ** -->
+            <h2><i class="fas fa-project-diagram"></i> Engineering & Technical Projects</h2>
+            <div class="project-grid">
+                
+                <!-- Project: Coding Projects / ASL Bot (Combined/Refined from Resume & Existing) -->
+                <div class="project-item card">
+                    <div class="project-image-container">
+                        <img src="static\Imgs\ASL_BOT.png" alt="ASL Bot Interface" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <!-- Updated Title -->
+                        <h3>AI-Assisted ASL Learning Bot</h3>
+                        <!-- Updated Description -->
+                        <p>Developed an AI bot to assist with American Sign Language (ASL) learning and translation. This is part of 100+ coding projects developed across 8+ languages. Handled front-end UI and data pipeline (200k+ images).</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">OpenCV (CV2)</span>
+                            <span class="tag">MediaPipe</span>
+                            <span class="tag">Tkinter</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Multiple Languages</span> <!-- Representing the 100+ projects -->
+                        </div>
+                        <a href="https://github.com/greene80501/AS" target="_blank" rel="noopener noreferrer" class="project-button">View ASL Bot on GitHub</a>
+                        <!-- Maybe add a second link to general project portfolio if available -->
+                         <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="project-button" style="margin-top: 10px;">View More Projects</a> -->
+                    </div>
+                </div>
+
+                
+
+                <!-- Project: Machine Learning Paper (Existing) -->
+                <div class="project-item card">
+                    <div class="project-image-container">
+                        <img src="static\Imgs\Machine-Learning-Paper.png" alt="Machine Learning Paper Snippet" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Machine Learning Paper</h3>
+                        <p>Ongoing research exploring the effects of various activation functions (ReLU, Sigmoid, Tanh, etc.) on neural network performance across different tasks like image recognition and sequence modeling (LSTM).</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow/Keras</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Research</span>
+                            <span class="tag">AI/ML</span>
+                        </div>
+                        <a href="https://docs.google.com/document/d/1QFQJWNtU2_f3pxmQYtsY-UkkQUP0ov4I6Azt6ZB7tMM/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-button">View Paper</a>
+                    </div>
+                </div>
+
+                <!-- Project: AssignMate (Existing) -->
+                <div class="project-item card">
+                    <div class="project-image-container">
+                        <img src="static\Imgs\Ic_todoist.png" alt="AssignMate Logo/Concept" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>AssignMate</h3>
+                        <p>Python script automating assignment tracking by scraping a school's class website (Infinite Campus) and creating tasks in Todoist via its API, streamlining student workflows.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Web Scraping</span>
+                            <span class="tag">Selenium/BS4</span>
+                            <span class="tag">Todoist API</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <a href="https://github.com/greene80501/Ic_todoist" target="_blank" rel="noopener noreferrer" class="project-button">View on GitHub</a>
+                    </div>
+                </div>
+
+            </div> <!-- End Project Grid -->
+
+            <!-- Adding Activities from Resume here as well -->
+            <h2 style="margin-top: 4rem; text-align: center;"><i class="fas fa-users"></i> Activities & Leadership</h2>
+             <div class="project-grid"> <!-- Reusing project grid for layout consistency -->
+
+                 <!-- Activity: Skyline Debate Team -->
+                 <div class="project-item card">
+                    <div class="project-image-container" style="height: 150px; background-color: var(--light-bg); display: flex; align-items: center; justify-content: center;">
+                         <i class="fas fa-comments" style="font-size: 60px; color: var(--primary-color);"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Skyline Debate Team - President</h3>
+                        <p class="date" style="font-size: 0.9rem; color: #aaa;">2024 - Present</p>
+                        <p>Led debate subjects and formats, teaching and mentoring over 5 fellow team members across more than 100 meetings.</p>
+                        <div class="project-tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Mentorship</span>
+                            <span class="tag">Communication</span>
+                            <span class="tag">Debate</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Activity: P-TECH Student Council -->
+                 <div class="project-item card">
+                     <div class="project-image-container" style="height: 150px; background-color: var(--light-bg); display: flex; align-items: center; justify-content: center;">
+                         <i class="fas fa-users-cog" style="font-size: 60px; color: var(--secondary-color);"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>P-TECH Student Council - Member</h3>
+                        <p class="date" style="font-size: 0.9rem; color: #aaa;">2024 - Present</p>
+                        <p>Worked collaboratively with a group of 10 peers to oversee P-TECH program recruiting efforts, celebrations, and other events.</p>
+                        <div class="project-tags">
+                            <span class="tag">Collaboration</span>
+                            <span class="tag">Event Planning</span>
+                            <span class="tag">Recruiting</span>
+                            <span class="tag">Teamwork</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Activity: Cyber Patriots -->
+                 <div class="project-item card">
+                     <div class="project-image-container" style="height: 150px; background-color: var(--light-bg); display: flex; align-items: center; justify-content: center;">
+                         <i class="fas fa-shield-alt" style="font-size: 60px; color: var(--primary-color);"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cyber Patriots - Team Leader</h3>
+                        <p class="date" style="font-size: 0.9rem; color: #aaa;">2023 - Present</p>
+                        <p>Assembled and led a team in the national cyber security competition, focusing on securing 3 Operating Systems (Windows, Linux) and a server OS.</p>
+                        <div class="project-tags">
+                            <span class="tag">Cybersecurity</span>
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Team Management</span>
+                            <span class="tag">Operating Systems</span>
+                        </div>
+                    </div>
+                </div>
+                
+                 <!-- Activity: Skyline Wrestling Team -->
+                 <div class="project-item card">
+                     <div class="project-image-container" style="height: 150px; background-color: var(--light-bg); display: flex; align-items: center; justify-content: center;">
+                         <i class="fas fa-medal" style="font-size: 60px; color: var(--secondary-color);"></i> <!-- Or fas fa-dumbbell -->
+                    </div>
+                    <div class="project-content">
+                        <h3>Skyline Wrestling Team - Varsity Member</h3>
+                         <p class="date" style="font-size: 0.9rem; color: #aaa;">2020 - Present</p>
+                        <p>Demonstrated self-discipline, teamwork, and fitness, contributing to team success during competitions.</p>
+                        <div class="project-tags">
+                            <span class="tag">Discipline</span>
+                            <span class="tag">Teamwork</span>
+                            <span class="tag">Fitness</span>
+                            <span class="tag">Athletics</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End Activities Grid -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="section-container">
+            <h2><i class="fas fa-envelope"></i> Let's Connect</h2>
+            <p class="contact-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!</p>
+            <div class="contact-info">
+                <a href="https://github.com/greene80501" class="contact-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                <!-- Updated email from resume -->
+                <a href="mailto:greene.wyatt30@gmail.com" class="contact-button"><i class="fas fa-envelope"></i> Email</a>
+                <!-- Updated LinkedIn from resume -->
+                <a href="https://www.linkedin.com/in/wyatt-greene-9235ab333" class="contact-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                 <!-- Added Website Link from Resume -->
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content section-container">
+            <div class="footer-socials">
+                 <a href="https://github.com/greene80501" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                 <a href="https://www.linkedin.com/in/wyatt-greene-9235ab333" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                 <a href="mailto:greene.wyatt30@gmail.com" aria-label="Send Email"><i class="fas fa-envelope"></i></a>
+
+            </div>
+             <!-- Ensure script.js updates #current-year -->
+             <p>© <span id="current-year">2024</span> Wyatt Greene. All rights reserved.</p> <!-- Added fallback year -->
+         </div>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <!-- Reminder: Link AOS JS here if using Animate On Scroll -->
+    <!-- <script src="path/to/aos.js"></script> -->
+    <script src="static/script.js"></script>
+    <!-- Reminder: Ensure script.js initializes AOS if used, handles mobile menu, toggleExpand, code-fall, and current-year -->
+
+</body>
+</html>
